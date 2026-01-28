@@ -1,0 +1,29 @@
+{
+  "name": "test-builder",
+  "productName": "TestBuilder",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "user",
+  "scripts": {
+    "start": "electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
+  },
+  "dependencies": {
+    "jsdom": "^27.4.0",
+    "markdown-it": "^14.1.0"
+  },
+  "devDependencies": {
+    "electron": "38.8.0",
+    "electron-builder": "26.6.0"
+  },
+  "build": {
+    "appId": "test-builder.id",
+    "mac": {
+      "identity": null,
+      "category": "your.app.category.type"
+    }
+  }
+}
